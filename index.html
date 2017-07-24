@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
     <style>
       #tab{
         width: 25%;
@@ -22,17 +23,117 @@
       #text{
         position: absolute;
         right: 50px;
-        top: 80px;
+        top: 100px;
       }
       #bot{
         height: 20%;
         background-color: rgb(170, 96, 20);
       }
+      #blank{
+        height: 50
+      }
+      #Bcol{
+        height: 100%;
+        background-color: rgb(201, 106, 6);
+      }
+      #mush{
+        position: absolute;
+        left: 160px;
+        top: 220px;
+      }
+      #but1{
+        font-family: 'Kanit',monospace;
+        font-weight: bold;
+        font-size: 20;
+        position: absolute;
+        top: 86px;
+        left: 109px;
+      }
+      #but2{
+        font-family: 'Kanit',monospace;
+        font-weight: bold;
+        font-size: 20;
+        position: absolute;
+        top: 240px;
+        left: 109px;
+
+      }
+      #but3{
+        font-family: 'Kanit',monospace;
+        font-weight: bold;
+        font-size: 20;
+        position: absolute;
+        top: 380px;
+        left: 115px;
+
+      }
+      #but33{
+        font-family: 'Kanit',monospace;
+        font-weight: bold;
+        font-size: 20;
+        position: absolute;
+        top: 406px;
+        left: 109px;
+      }
+      #but4{
+        font-family: 'Kanit',monospace;
+        font-weight: bold;
+        font-size: 20;
+        position: absolute;
+        top: 540px;
+        left: 109px;
+
+      }
     </style>
   </head>
   <body>
+    <div class = "col-md-1" id = "Bcol">
+
+    </div>
     <div class = "col-md-4" id = "tab">
-      <div id="btton" class="btn-group ; col-md-3" style="text-align: center" role="group" aria-label="...">
+      <div class = "row" id = "blank">
+
+      </div>
+      <div class = "row">
+        <input type="image" src="img/Tbut.png" alt="Submit" width="300">
+        <p id = "but1">
+          Temp
+        </p>
+        <p id = "">
+
+        </p>
+      </div>
+      <div class = "row" style="height:50">
+
+      </div>
+      <div class = "row">
+        <input type="image" src="img/Wbut.png" alt="Submit" width="300">
+        <p id = "but2">
+          Water
+        </p>
+      </div>
+      <div class = "row" style="height:50">
+
+      </div>
+      <div class = "row">
+        <input type="image" src="img/Sbut.png" alt="Submit" width="300">
+        <p id = "but3">
+          Light
+        </p>
+        <p id = "but33">
+          Intencity
+        </p>
+      </div>
+      <div class = "row" style="height:50">
+
+      </div>
+      <div class = "row">
+        <input type="image" src="img/Hbut.png" alt="Submit" width="300">
+        <p id = "but4">
+          Humidity
+        </p>
+      </div>
+      <!-- <div id="btton" class="btn-group ; col-md-3" style="text-align: center" role="group" aria-label="...">
         <div>
             <a href="temperature.html"><button type="button" class="btn btn-default">Temperature<p id="tem"> </p></button></a>
         </div>
@@ -47,16 +148,14 @@
         <br></br>
         <div>
             <a href="moist.html"><button type="button" class="btn btn-default"><p id="moist">Moistness</p></button></a>
-        </div>
+        </div> -->
     </div>
     </div>
     <div class = "col-md-8">
       <div class = "row" id = "head">
       </div>
       <div class = "row" id = "main">
-        <center>
-          <img src = "GMr.gif"/ >
-        </center>
+        <img src = "GMr.gif"/ id = "mush">
         <img src = "img/TextBox.png"/ width="400px" id = "text">
       </div>
       <div class = "row" id = "bot">
