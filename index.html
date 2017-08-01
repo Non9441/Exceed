@@ -1,4 +1,4 @@
-<html>
+﻿<html>
   <head>
     <title>I Muchroom</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-874">
     <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    <script src = "index.js"></script>
     <style>
       #tab{
         width: 25%;
@@ -14,19 +16,41 @@
         background-color: rgb(201, 106, 6);
       }
       #head{
-        height: 20%;
+        height: 21%;
+        background-color: rgb(158, 198, 24)
+      }
+      #title{
+        padding-top: 10px;
+      }
+      #line{
+        height: 2%;
+        background-color: rgb(119, 168, 49);
       }
       #main{
         background-color: rgb(218, 166, 97);
-        height: 60%;
+        height: 56%;
+      }
+      #talk{
+        width: 300px;
+        position: absolute;
+        left: 632px;
+        top: 258px;
+      }
+      #talktalk{
+        font-size: 30;
+        font-family: 'Kanit',monospace;
+        font-weight: bolder;
       }
       #text{
+        font-size: 45;
+        font-weight: bolder;
+        font-family: 'kanit',monospace;
         position: absolute;
         right: 50px;
-        top: 100px;
+        top: 210px;
       }
       #bot{
-        height: 20%;
+        height: 21%;
         background-color: rgb(170, 96, 20);
       }
       #blank{
@@ -38,8 +62,9 @@
       }
       #mush{
         position: absolute;
+        width: 400px;
         left: 160px;
-        top: 220px;
+        top: 185px;
       }
       #but1{
         font-family: 'Kanit',monospace;
@@ -84,6 +109,60 @@
         left: 109px;
 
       }
+      #temp{
+        font-family: 'Kanit',monospace;
+        font-weight: bold;
+        font-size: 30;
+        position: absolute;
+        top: 79px;
+        left: 230px;
+      }
+      #tank{
+        font-family: 'Kanit',monospace;
+        font-weight: bold;
+        font-size: 30;
+        position: absolute;
+        top: 232px;
+        left: 230px;
+      }
+      #light{
+        font-family: 'Kanit',monospace;
+        font-weight: bold;
+        font-size: 30;
+        position: absolute;
+        top: 387px;
+        left: 230px;
+      }
+      #moist{
+        font-family: 'Kanit',monospace;
+        font-weight: bold;
+        font-size: 30;
+        position: absolute;
+        top: 535px;
+        left: 230px;
+      }
+      #bot1{
+        /*background-color: red;*/
+        height: 60px;
+      }
+      #pure{
+        padding-top: 20px;
+      }
+      #fan{
+        padding-top: 20px;
+      }
+      #chart{
+        padding-top: 20px;
+      }
+      #play{
+        padding-top: 20px;
+      }
+      #lightbulb{
+        padding-top: 20px;
+      }
+      #slider .slider-selection {
+	       background: #BABABA;
+      }
     </style>
   </head>
   <body>
@@ -99,7 +178,7 @@
         <p id = "but1">
           Temp
         </p>
-        <p id = "">
+        <p id = "temp">
 
         </p>
       </div>
@@ -111,6 +190,9 @@
         <p id = "but2">
           Water
         </p>
+        <p id = "tank">
+
+        </p>
       </div>
       <div class = "row" style="height:50">
 
@@ -121,7 +203,10 @@
           Light
         </p>
         <p id = "but33">
-          Intencity
+          Intensity
+        </p>
+        <p id = "light">
+
         </p>
       </div>
       <div class = "row" style="height:50">
@@ -132,34 +217,57 @@
         <p id = "but4">
           Humidity
         </p>
+        <p id = "moist">
+
+        </p>
       </div>
-      <!-- <div id="btton" class="btn-group ; col-md-3" style="text-align: center" role="group" aria-label="...">
-        <div>
-            <a href="temperature.html"><button type="button" class="btn btn-default">Temperature<p id="tem"> </p></button></a>
-        </div>
-        <br></br>
-        <div>
-            <a href="lightinten.html"><button type="button" class="btn btn-default"><p id="light">Light</p></button></a>
-        </div>
-        <br></br>
-        <div>
-            <a href="water.html"><button type="button" class="btn btn-default"><p id="water">Water</p></button></a>
-        </div>
-        <br></br>
-        <div>
-            <a href="moist.html"><button type="button" class="btn btn-default"><p id="moist">Moistness</p></button></a>
-        </div> -->
     </div>
     </div>
     <div class = "col-md-8">
       <div class = "row" id = "head">
+        <center>
+          <img  id = "title" src = "img/title.png"/ width="400px">
+        </center>
+      </div>
+      <div class = "row" id = "line">
+
       </div>
       <div class = "row" id = "main">
-        <img src = "GMr.gif"/ id = "mush">
+        <img src = "GMr.gif" id = "mush">
         <img src = "img/TextBox.png"/ width="400px" id = "text">
+        <div id = "talk">
+          <center>
+            <p id = "talktalk">^w^</p>
+          </center>
+        </div>
+        <p>
+
+        </p>
       </div>
       <div class = "row" id = "bot">
+        <div class = "col-md-2" id = "bot1">
+          <input id = "chart" type = "image" src = "img/chart2.png" width="100px" onclick="location.href='chart.html';" />
+        </div>
+        <div class = "col-md-2" id = "bot11">
+          <input id = "chart" type = "image" src = "img/chart.png" width="100px" onclick="location.href='http://158.108.165.76/index.html';" />
 
+        </div>
+        <div class = "col-md-2" id = "bot2">
+          <div class="dropup" id = "lcontroll">
+            <input id = "lightbulb" type="image" src="img/light1.png" alt="Submit" width="100px" />
+
+          </div>
+        </div>
+        <div class = "col-md-2" id = "bot3">
+          <input id = "fan" type="image" src="img/FanBut2.png" alt="Submit" width="100px">
+        </div>
+        <div class = "col-md-2" id = "bot4">
+          <input id = "pure" type="image" src="img/valve.png" alt="Submit" width="100px">
+        </div>
+        <div class = "col-md-2" id = "bot5">
+            <input id = "play" type="image" src="img/play.png" alt="Submit" width="100px">
+        </div>
+      </div>
       </div>
 
     </div>

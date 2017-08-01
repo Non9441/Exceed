@@ -1,0 +1,45 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script type="text/javascript">
+
+window.onload = function () {
+	var chart = new CanvasJS.Chart("chartContainer", {
+		title:{
+			text: "อุณหภูมิเฉลี่ย"
+		},
+		data: [
+		{
+			// Change type to "doughnut", "line", "splineArea", etc.
+			type: "column",
+			dataPoints: [
+				{ label: "วันที่ 1",  y: 24  },
+				{ label: "วันที่ 2", y: 23 },
+				{ label: "วันที่ 3", y: 25  },
+				{ label: "วันที่ 4",  y: 30  },
+				{ label: "วันที่ 5",  y: 28  },
+          { label: "วันที่ 6",  y: 27 },
+        { label: "วันที่ 7",  y: 28  }
+			]
+		}
+		]
+	});
+	chart.render();
+}
+</script>
+<style>
+	#chartContainer{
+		padding-top: 100px;
+	}
+	body{
+		background-color: rgb(218, 166, 97);
+	}
+</style>
+</head>
+<body>
+	<center>
+		<div id="chartContainer" style="height: 500px; width: 70%;"></div>
+	</center>
+</body>
+</html>
